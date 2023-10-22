@@ -2,16 +2,22 @@ import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
 
-const HomeScreen = () => {
+function HomeScreen()  {
     return(
-        <view>
-            <Text style={styles.TextStyle}>Welcome to Home Screen   </Text>
-        </view>
+        <View>
+            <Text styles={styles.TextStyle}>
+                Welcome to Home Screen</Text>
+        </View>
     );
 };
 
+
 const styles = StyleSheet.create({
     TextStyle: {
-        fontSize: 30
+        flex: 1, 
+        alignItems: 'center', 
+        justifyContent: 'center',
+        backgroundColor: 'blue'
     }
 })
+export default HomeScreen;
