@@ -6,7 +6,7 @@ function HomeScreen()  {
     return(
         <View>
             <Text styles={styles.TextStyle}>
-                Welcome to Home Screen</Text>
+                Welcome to Home Screen and first page</Text>
         </View>
     );
 };
