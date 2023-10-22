@@ -4,20 +4,22 @@ import {Text, View, StyleSheet} from 'react-native';
 
 function HomeScreen()  {
     return(
-        <View>
-            <Text styles={styles.TextStyle}>
-                Welcome to Home Screen and first page</Text>
+        <View style={styles.container}>
+            <Text style={styles.TextStyle}>Welcome to Home Screen and first page</Text>
         </View>
     );
 };
 
 
 const styles = StyleSheet.create({
-    TextStyle: {
+    container: {
         flex: 1, 
         alignItems: 'center', 
-        justifyContent: 'center',
+        justifyContent: 'top',
         backgroundColor: 'blue'
+    },
+    TextStyle: {
+        color: 'white'
     }
 })
 export default HomeScreen;

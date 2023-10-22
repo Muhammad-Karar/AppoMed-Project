@@ -7,7 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import  HomeScreen  from './MyComponent/HomeScreen';
 // function HomeScreen() {
 //   return (
-//     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+//     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'blue'}}>
 //       <Text>Home Screen</Text>
 //     </View>
 //   );
