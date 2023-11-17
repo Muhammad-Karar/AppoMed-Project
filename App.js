@@ -1,7 +1,7 @@
 // In App.js in a new project
 
 import * as React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import  HomeScreen  from './MyComponent/HomeScreen';
@@ -19,10 +19,16 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen options={{ headerTitleStyle: styles.headingStyle}} name="AppoMed" 
+        component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
-
+const styles = StyleSheet.create({
+  headingStyle: {
+      color: 'blue',
+      fontWeight: 'bold',
+  }
+})
 export default App;
